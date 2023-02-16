@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@2.50.1/dist/full.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+  </head>
+
+  <body>
+    <header>
+      <h1 class="text-5xl font-bold text-center text-emerald-500 mt-9 mb-9">Money Master💰</h1>
+    </header>
+    <main>
+      <section class="grid md:grid-cols-2 px-16">
+        <div>
+          <img class="w-4/5" src="/img/money-master.png" alt="" />
+        </div>
+        <div class="text-center">
+          <h2 class="font-medium text-2xl mb-7">Income</h2>
+          <div class="flex mb-5 justify-around items-center">
+            <label for="income-field" class="text-lg ">Income:</label>
+            <input id="income-field" type="text" placeholder="Place your amount here" class="input input-bordered w-full max-w-xs" />
+          </div>
+          <h2 class="font-medium text-2xl mb-7">Expenses</h2>
+          <div class="flex mb-5 justify-around items-center">
+            <label for="food-field" class="text-lg ">Food:</label>
+            <input id="food-field" type="text" placeholder="Place your amount here" class="input input-bordered w-full max-w-xs" />
+          </div>
+          <div class="flex mb-5 justify-around items-center">
+            <label for="rent-field" class="text-lg ">Rent:</label>
+            <input id="rent-field" type="text" placeholder="Place your amount here" class="input input-bordered w-full max-w-xs" />
+          </div>
+          <div class="flex mb-7 justify-around items-center">
+            <label for="clothes-field" class="text-lg ">Cloth:</label>
+            <input id="clothes-field" type="text" placeholder="Place your amount here" class="input input-bordered w-full max-w-xs" />
+          </div>
+          <button id="btn-calculate" class="bg-[#59A5FF] text-white font-bold rounded-lg py-3 px-14 mb-7">Calculate</button>
+          <h2 class="font-medium text-2xl mb-8">Total Expenses: $<span id="total-expenses">00</span></h2>
+          <h2 class="font-medium text-2xl mb-8">Balance: $<span id="remaining-balance">00</span></h2>
+          <div class="flex mb-8 justify-center gap-4 items-center">
+            <label for="save-field">Save</label>
+            <input id="save-field" type="text" placeholder="Place your amount here" class="input input-bordered w-1/4 max-w-xs" />
+            <span>%</span>
+            <button id="btn-save" class="bg-[#59A5FF] text-white font-bold rounded-lg py-3 px-14">Save</button>
+          </div>
+          <h2 class="font-medium text-2xl mb-8">Saving Amount: $<span id="s-amount">00</span></h2>
+          <h2 class="font-medium text-2xl mb-8">Remaining Balance: $<span id="s-balance">00</span></h2>
+        </div>
+
+      </section>
+    </main>
+
+    <script src="/js/script.js"></script>
+  </body>
+</html>
